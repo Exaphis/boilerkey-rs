@@ -76,7 +76,6 @@ async fn activate() -> Result<HOTPData, ActivationError> {
             "{}{}",
             "https://api-1b9bef70.duosecurity.com/push/v2/activation/", activation_code
         ))
-        // .post("https://httpbin.org/post")
         .header("User-Agent", "okhttp/3.11.0")
         .query(&[
             ("app_id", "com.duosecurity.duomobile.app.DMApplication"),

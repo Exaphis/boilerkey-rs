@@ -21,6 +21,8 @@ Run `cargo build`.
    format.
     * Data for `boilerkey-rs` is stored in `hotp_data.json` in the working directory.
 
+First execution:
+
 ```console
 $ target/release/boilerkey-rs
 Enter activation code: ABCXYZ
@@ -28,4 +30,12 @@ Requesting activation data...
 Response: <snip>
 Enter BoilerKey PIN: pin
 pin,123456
+```
+
+Subsequent executions:
+
+```console
+$ target/release/boilerkey-rs
+Reading hotp_data.json...
+pin,654321
 ```
