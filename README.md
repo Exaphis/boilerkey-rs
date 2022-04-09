@@ -16,9 +16,10 @@ Run `cargo build`.
    "Visit this URL with your smartphone" section.
     * When the URL is `https://m-1b9bef70.duosecurity.com/activate/ABCXYZ`, the
       activation code is ABCXYZ.
-4. Enter your BoilerKey PIN
+4. Enter your BoilerKey PIN.
 5. Done! Every time you run `boilerkey-rs`, a new code will be generated in `pin,code`
    format.
+    * Data for `boilerkey-rs` is stored in `hotp_data.json` in the working directory.
 
 ```console
 $ target/release/boilerkey-rs
