@@ -94,7 +94,7 @@ async fn activate() -> Result<HOTPData, ActivationError> {
         .await?
         .text()
         .await?;
-    println!("Response: {}", res_text);
+    println!("Done!");
     let res = serde_json::from_str::<DuoActivationResponseWrapper>(&res_text)?;
 
     print!("Enter BoilerKey PIN: ");
